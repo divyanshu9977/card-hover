@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-shadow: border-box;
+    }
+    html body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 300px;
+        height: 400px;
+        background-color: aqua;
+        position: absolute;
+        top: 100px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgb(205, 10, 10);
+        transition: 0.3s;
+    }
+
+    .card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgb(78, 208, 8);
+    }
+    .img{
+        width: 300px;
+        height: 250px;
+        background-color: red;
+    }
+
+    button{
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        left: 33%;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button:hover{
+        background-color: #444;
+    }
+    .img{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxDO5b6ADsaQ5qDcLyDO2q5sAOtf_2agrn2imHYiAq6NI5h-0jfmpDyc&s=10);
+        background-size: cover;
+        background-position: center;
+    }
+
+</style>
+<body>
+    <div class="card">
+        <div class="img"></div>
+        <br></br>
+        <button>Learn More</button>
+    </div>
+</body>
+</html>
